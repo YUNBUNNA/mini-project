@@ -3,11 +3,9 @@
     --main-bg: linear-gradient(to right, #0d47a1, #1976d2);
    
 }
-
 :root {
   --main-bg: linear-gradient(to right, #0d47a1, #1976d2);
 }
-
 body {
   font-family: "Poppins" !important;
 }
