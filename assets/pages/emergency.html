@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- link to icon bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- link to style -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- link to theme -->
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+    <!-- link to aos -->
+    <link rel="stylesheet" href="../../assets/plugins/aos/css/aos.css">
+    <!-- link to swiper -->
+    <link rel="stylesheet" href="../../assets/plugins/swiper-js/css/swiper-bundle.min.css">
+</head>
+<style>
+    :root {
+        --primary-color: #4f46e5;
+        --secondary-color: #06b6d4;
+        --accent-color: #f59e0b;
+        --success-color: #10b981;
+        --danger-color: #ef4444;
+        --dark-color: #1f2937;
+        --light-color: #f8fafc;
+        --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .floating-icon {
+        position: absolute;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.1);
+        animation: float 15s infinite linear;
+    }
+
+    .floating-icon:nth-child(1) {
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .floating-icon:nth-child(2) {
+        top: 60%;
+        left: 80%;
+
+        animation-delay: 5s;
+    }
+
+    .floating-icon:nth-child(3) {
+        top: 80%;
+        left: 15%;
+        animation-delay: 10s;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        33% {
+            transform: translateY(-20px) rotate(120deg);
+        }
+
+        66% {
+            transform: translateY(10px) rotate(240deg);
+        }
+    }
+
+    .hero-section {
+        background: var(--main-bg);
+        color: white;
+        padding: 120px 0 80px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .Need_Help_Choosing {
+        background: var(--main-bg);
+        color: white;
+        padding: 120px 0 80px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        display: block;
+    }
+
+    .f-10 {
+        font-size: 80px;
+    }
+
+    .pricing-card {
+        background: white;
+        border-radius: 24px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        border: 2px solid transparent;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-color: var(--primary-color);
+    }
+
+    .popular-card {
+        transform: scale(1.05);
+        border-color: var(--primary-color);
+        box-shadow: 0 20px 40px -12px rgba(79, 70, 229, 0.3);
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 18px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .stat-item:hover{
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    .accordion-button:focus {
+        background-color: none !important;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">GitHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bunna.html">Bunna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jimmy.html">Jimmy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="heang.html">Heang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vichhra.html">Vichhra</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" type="button" class="btn btn-warning ms-3 fw-bold">Login</a>
+                <a href="" type="button" class="btn btn-success ms-3 fw-bold">Sign Up</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="floating-icons">
+                <i class="bi bi-balloon-heart floating-icon"></i>
+                <i class="bi bi-hospital floating-icon"></i>
+                <i class="bi bi-heart-pulse floating-icon"></i>
+
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold mb-4">
+                            Your Life-Saving
+                            <span class="text-warning">Emergency Information</span>
+                            System
+                        </h1>
+                        <p class="lead mb-4 fs-5 text-black">
+                            Advanced AI-powered emergency healthcare information management with instant access,
+                            real-time coordination, and 24/7 professional medical support.
+                        </p>
+
+                        <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                            <a href="" class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-600">
+                                <i class="fas fa-rocket me-2"></i> View Plans
+                            </a>
+                            <button class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-600">
+                                <i class="fas fa-play me-2"></i> Watch Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-8 bg-light mt-8">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-light text-center border-0">
+                            <div class="card-body">
+                                <h1 class="stat-number">99.9%</h1>
+                                <p class="card-text text-black">Uptime Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-light text-center border-0">
+                            <div class="card-body">
+                                <h1 class="stat-number">30s</h1>
+                                <p class="card-text text-black">Emergency Response</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-light text-center border-0">
+                            <div class="card-body">
+                                <h1 class="stat-number">50K+</h1>
+                                <p class="card-text text-black">Lives Protected</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-light  text-center border-0">
+                            <div class="card-body">
+                                <h1 class="stat-number">24/7</h1>
+                                <p class="card-text text-black">Medical Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10  mt-8">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fs-1 fw-bold text-black mb-4">Choose Your Emergency Protection Plan</h2>
+                    <p class="text-muted fs-5 mb-15">Comprehensive healthcare emergency management with industry-leading
+                        security
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <!-- Essential Plan -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="pricing-card  rounded-5 ">
+                            <div class="card py-3  rounded-5 border-0">
+                                <div class="card-body">
+                                    <h2 class="fs-2 text-center">Essential Care</h2>
+                                    <p class=" text-center">Perfect for individuals</p>
+                                    <h1 class=" text-primary text-center" style="font-size: 70px; font-weight: 700;">$39
+                                    </h1>
+                                    <p class=" text-center">Per month</p>
+                                    <ul class="features-list" type="none">
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Medical history storage (HIPAA)
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Emergency contacts (up to 10)
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Medication tracking & alerts
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Mobile app with offline access
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-x-circle-fill text-danger me-3"></i>
+                                            24/7 medical hotline
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-x-circle-fill text-danger me-3"></i>
+
+                                            AI health monitoring
+                                        </li>
+
+                                    </ul>
+                                    <button class="btn btn-outline-primary w-100">
+                                        Get Essential Care
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Professional Plan -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="pricing-card  popular-card rounded-5 ">
+                            <div class="card py-3  rounded-5 border-0">
+                                <div class="card-body">
+                                    <h2 class="fs-2 text-center">Professional Care</h2>
+                                    <p class=" text-center">24/7 medical support included</p>
+                                    <h1 class=" text-primary text-center" style="font-size: 70px; font-weight: 700;">$99
+                                    </h1>
+                                    <p class=" text-center">Per month</p>
+                                    <ul class="features-list" type="none">
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Everything in Essential Care
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            <strong>24/7 emergency medical hotline</strong>
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Family access (up to 8 members)
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            AI-powered health monitoring
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+
+                                            Emergency response coordination
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+
+
+                                            Hospital preference tracking
+                                        </li>
+
+                                    </ul>
+                                    <button class="btn btn-primary w-100">
+                                        Get Professional Care
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Premium Plan -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="pricing-card  rounded-5 ">
+                            <div class="card py-3  rounded-5 border-0">
+                                <div class="card-body">
+                                    <h2 class="fs-2 text-center">Essential Care</h2>
+                                    <p class=" text-center">Perfect for individuals</p>
+                                    <h1 class=" text-primary text-center" style="font-size: 70px; font-weight: 700;">$39
+                                    </h1>
+                                    <p class=" text-center">Per month</p>
+                                    <ul class="features-list" type="none">
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Everything in Professional Care
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            <strong>Dedicated emergency coordinator</strong>
+
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Unlimited family access
+
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                            Medical transport coordination
+
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+
+                                            International emergency support
+
+                                        </li>
+                                        <li class="border-bottom py-2 ">
+                                            <i class="bi bi-check-circle-fill text-success me-3"></i>
+
+
+                                            Priority specialist network
+
+                                        </li>
+
+                                    </ul>
+                                    <button class="btn btn-outline-primary w-100">
+                                        Contact Sales
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10  ">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fs-1 fw-bold text-black mb-4">Frequently Asked Questions</h2>
+                    <p class="text-muted fs-5 mb-10">Everything you need to know about our services
+                    </p>
+                </div>
+                <!-- Bootstrap Accordion with Custom Styling -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        How quickly can emergency responders access my information?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Emergency responders can usually access your information within seconds to a
+                                        couple of minutes, depending on how and where it’s stored. If it’s on a visible
+                                        medical ID, bracelet, or in your phone’s emergency section, they can see it
+                                        almost immediately. If it’s in a medical database, it may take a few minutes to
+                                        retrieve.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Is my medical information secure and HIPAA compliant?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Your medical information is HIPAA compliant and secure only if it’s stored and
+                                        managed by a healthcare provider, hospital, or service that follows HIPAA
+                                        regulations. Information you keep on a phone, bracelet, or personal app is not
+                                        covered by HIPAA, so while it may still be safe, it’s not legally protected in
+                                        the same way.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        What happens if I'm unconscious and can't provide information?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        If you’re unconscious and can’t provide information, emergency responders will
+                                        look for it in visible or accessible places—such as a medical ID bracelet,
+                                        wallet card, phone emergency info, or through hospital/EMS databases—so they can
+                                        quickly learn your identity, medical conditions, allergies, and emergency
+                                        contacts.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Can I cancel or change my plan anytime?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes. You can cancel or change your plan at any time—most services either let you
+                                        do it instantly through your account settings or by contacting customer support,
+                                        though some may adjust your billing on the next cycle rather than immediately.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 Need_Help_Choosing ">
+            <div class="text-center mb-5">
+                <h2 class="fs-1 fw-bold text-white mb-4">Need Help Choosing?</h2>
+                <p class="fs-4 mb-15">Our healthcare specialists are here to help you 24/7
+                </p>
+            </div>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card stat-item text-white ">
+                            <div class="card-body">
+                                <i class="bi bi-telephone-fill fs-1 text-white"></i>
+                                <h5 class="card-text mb-3">Emergency Hotline</h5>
+                                <a href="" class="card-text text-decoration-none text-white ">1-800-CARE-911</a>
+                                <p class="card-text mt-3">Available 24/7</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card stat-item text-white ">
+                            <div class="card-body">
+                                <i class="bi bi-envelope-fill fs-1 text-white"></i>
+                                <h5 class="card-text mb-3">Email Support</h5>
+                                <a href="" class="card-text text-decoration-none text-white ">Emergency@gamil.com</a>
+                                <p class="card-text mt-3">Response within 1 hour</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card stat-item text-white ">
+                            <div class="card-body">
+                                <i class="bi bi-wechat fs-1 text-white"></i>
+                                <h5 class="card-text">Live Chat</h5>
+                                <p class="card-text">Instant Support</p>
+                                <p class="card-text">Available 24/7</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- script bootstrap -->
+    <script src="../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- script aos -->
+    <script src="../../assets/plugins/aos/js/aos.js"></script>
+    <!-- script swiper -->
+    <script src="../../assets/plugins/swiper-js/js/swiper-bundle.min.js"></script>
+    <!-- script main.js-->
+    <script src="../../assets/js/mian.js"></script>
+
+</body>
+
+</html>
