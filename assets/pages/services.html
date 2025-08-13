@@ -19,34 +19,6 @@
   <link rel="stylesheet" href="../plugins/swiper-js/css/swiper-bundle.min.css">
 
   <style>
-    .hero-section {
-      width: 100%;
-      color: white;
-      background: var(--main-bg);
-    }
-
-    .container h1 {
-      font-size: 50px;
-      font-weight: 50px;
-      color: black;
-      padding-top: 20px;
-    }
-
-    h2 {
-      font-size: 30px;
-      font-weight: 60px;
-      text-transform: capitalize;
-    }
-
-    h3 {
-      font-size: 10px;
-    }
-
-    .card-img-top {
-      height: 200px;
-      width: 100%;
-    }
-
     button {
       border-radius: 20px;
       color: rgb(18, 18, 18);
@@ -61,119 +33,133 @@
 <body>
 
   <header class="position-fixed top-0 w-100 z-3">
-        <nav class="navbar p-0 bg-white">
-            <div class="container">
-                <a href="../../index.html"
-                    class="navbar-brand text-dark fs-3 fw-medium fst-italic d-flex align-items-center gap-2">
-                    <i class="bi bi-heart-pulse fs-1 text-primary icon-heart-pulse"></i>
-                    HopeMed
+    <nav class="navbar p-0 bg-white">
+      <div class="container">
+        <a href="../../index.html"
+          class="navbar-brand text-dark fs-3 fw-medium fst-italic d-flex align-items-center gap-2">
+          <i class="bi bi-heart-pulse fs-1 text-primary icon-heart-pulse"></i>
+          HopeMed
+        </a>
+        <ul class="navbar-nav flex-row fw-medium d-none d-lg-flex">
+          <li class="nav-item px-3">
+            <a href="../../index.html" class="nav-link text-dark fw-medium">
+              <i class="bi bi-house-door text-primary fs-5"></i> Home
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a href="services.html" class="nav-link text-dark fw-medium">
+              <i class="bi bi-people text-primary fs-5"></i> Services
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a href="emergency.html" class="nav-link text-dark fw-medium">
+              <i class="bi bi-plus-circle text-primary fs-5"></i> Emergency
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a href="pricing.html" class="nav-link text-dark fw-medium">
+              <i class="bi bi-tags text-primary fs-5"></i> Pricing
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a href="blog.html" class="nav-link text-dark fw-medium">
+              <i class="bi bi-journal-text text-primary fs-5"></i> Blog
+            </a>
+          </li>
+        </ul>
+        <div class="btn-group gap-2 d-none d-lg-block">
+          <button class="bubbles p-1 px-3 rounded-4">
+            <span class="text">Sign in</span>
+          </button>
+
+          <a href="" class="btn bg-root text-dark rounded-4 text-white fw-medium">Sign up</a>
+        </div>
+        <button class="btn btn-primary d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <div class="bi bi-list fs-2"></div>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">HopeMed Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item mb-2">
+                <a href="../../index.html" class="nav-link text-dark fs-5">
+                  <i class="bi bi-house-door me-2 text-primary"></i> Home
                 </a>
-                <ul class="navbar-nav flex-row fw-medium d-none d-lg-flex">
-                    <li class="nav-item px-3">
-                        <a href="../../index.html" class="nav-link text-dark fw-medium">
-                            <i class="bi bi-house-door text-primary fs-5"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a href="services.html" class="nav-link text-dark fw-medium">
-                            <i class="bi bi-people text-primary fs-5"></i> Services
-                        </a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a href="emergency.html" class="nav-link text-dark fw-medium">
-                            <i class="bi bi-plus-circle text-primary fs-5"></i> Emergency
-                        </a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a href="pricing.html" class="nav-link text-dark fw-medium">
-                            <i class="bi bi-tags text-primary fs-5"></i> Pricing
-                        </a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a href="blog.html" class="nav-link text-dark fw-medium">
-                            <i class="bi bi-journal-text text-primary fs-5"></i> Blog
-                        </a>
-                    </li>
-                </ul>
-                <div class="btn-group gap-2 d-none d-lg-block">
-                    <button class="bubbles p-1 px-3 rounded-4">
-                        <span class="text">Sign in</span>
-                    </button>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services.html" class="nav-link text-dark fs-5">
+                  <i class="bi bi-people me-2 text-primary"></i> Services
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="emergency.html" class="nav-link text-dark fs-5">
+                  <i class="bi bi-plus-circle me-2 text-primary"></i> Emergency
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="pricing.html" class="nav-link text-dark fs-5">
+                  <i class="bi bi-tags me-2 text-primary"></i> Pricing
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="blog.html" class="nav-link text-dark fs-5">
+                  <i class="bi bi-journal-text me-2 text-primary"></i> Blog
+                </a>
+              </li>
+            </ul>
 
-                    <a href="" class="btn bg-root text-dark rounded-4 text-white fw-medium">Sign up</a>
-                </div>
-                <button class="btn btn-primary d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <div class="bi bi-list fs-2"></div>
-                </button>
+            <hr>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">HopeMed Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav fw-medium">
-                            <li class="nav-item mb-2">
-                                <a href="../../index.html" class="nav-link text-dark fs-5">
-                                    <i class="bi bi-house-door me-2 text-primary"></i> Home
-                                </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="services.html" class="nav-link text-dark fs-5">
-                                    <i class="bi bi-people me-2 text-primary"></i> Services
-                                </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="emergency.html" class="nav-link text-dark fs-5">
-                                    <i class="bi bi-plus-circle me-2 text-primary"></i> Emergency
-                                </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="pricing.html" class="nav-link text-dark fs-5">
-                                    <i class="bi bi-tags me-2 text-primary"></i> Pricing
-                                </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="blog.html" class="nav-link text-dark fs-5">
-                                    <i class="bi bi-journal-text me-2 text-primary"></i> Blog
-                                </a>
-                            </li>
-                        </ul>
+            <div class="d-grid gap-2">
+              <button class="bubbles">
+                <span class="text">Sign in</span>
+              </button>
 
-                        <hr>
-
-                        <div class="d-grid gap-2">
-                            <button class="bubbles">
-                                <span class="text">Sign in</span>
-                            </button>
-
-                            <a href="#" class="btn btn-primary rounded-4 text-white">
-                                <i class="bi bi-person-plus me-2"></i> Sign Up
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              <a href="#" class="btn btn-primary rounded-4 text-white">
+                <i class="bi bi-person-plus me-2"></i> Sign Up
+              </a>
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <section class="hero-section py-8">
-      <div class="container text-center">
-        <h1 class="display-5 fw-bold lh-1 text-white mt-4">Comprehensive medical <br> services</h1>
-        <p class="text-white mb-4" style="font-size: 18px;">providing exeptional healthcare services with
-          compassion <br>innovation, and execellence. your journey to
-          better health <br> start here</p>
-      </div>
-      <div class="d-flex justify-content-center justify-content gap-3">
-        <a href="#" class="btn btn-light text-black btn-rounded-pill fw-medium px-5 fs-5">
-          Our servics
-        </a>
-        <a href="#" class="btn btn-outline-light btn-rounded-pill fw-medium px-5 fs-5 text-white">
-          Book Appointment
-        </a>
+    <section class="banner py-10">
+      <div class="container">
+        <div class="row g-5 align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-5 fw-bold lh-2 text-dark mb-4">
+              Comprehensive
+              <br class="d-none d-lg-inline"> medical services
+            </h1>
+            <p class="lead text-secondary mb-4" style="font-size: 18px;">
+              providing exeptional healthcare services with compassion
+              innovation, and execellence. your journey to better health
+              start here
+            </p>
+            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+              <a href="#" class="btn bg-root text-white btn-rounded-pill fw-medium px-5 fs-5">
+                Book an Appointment
+              </a>
+              <button class="bubbles p-1 px-5 rounded-2">
+                <span class="text fs-5">Our Services</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0">
+              <img src="https://png.pngtree.com/png-vector/20240720/ourmid/pngtree-doctors-team-png-image_13154212.png"
+                alt="" class="card-img img-fluid">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -192,13 +178,12 @@
                   class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
                 <div class="card-body">
                   <h4 class="card-title fw-bold">General Medicine</h4>
-                  <p class="card-text">comprehensive primary care services,including routin checkups,preventive</p>
-                  <a class="btn btn btn-primary rounded-pill me-2" type="button">
+                  <p class="card-text m-0">comprehensive primary care services,including routin checkups,preventive</p>
+                  <a class="btn btn-primary rounded-pill me-2 mt-2" type="button">
                     <i class="bi bi-calendar-plus me-2"></i>
                     Book Appointment
                   </a>
-
-                  <a class="btn btn-primary rounded-pill" type="button">
+                  <a class="btn btn-primary rounded-pill mt-2" type="button">
                     <i class="bi bi-info-circle me-2"></i>
                     Learn More
                   </a>
@@ -212,14 +197,13 @@
                   class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
                 <div class="card-body">
                   <h4 class="card-title fw-bold">Cardiology</h4>
-                  <p class="card-text">AI Overview
+                  <p class="card-text m-0">AI Overview
                     Cardiology is the branch of medicine focused on the study and help</p>
-                  <a class="btn btn btn-primary rounded-pill me-2" type="button">
+                  <a class="btn btn-primary rounded-pill me-2 mt-2" type="button">
                     <i class="bi bi-calendar-plus me-2"></i>
                     Book Appointment
                   </a>
-
-                  <a class="btn btn-primary rounded-pill" type="button">
+                  <a class="btn btn-primary rounded-pill mt-2" type="button">
                     <i class="bi bi-info-circle me-2"></i>
                     Learn More
                   </a>
@@ -232,13 +216,13 @@
                   class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
                 <div class="card-body">
                   <h4 class="card-title fw-bold">Neurology</h4>
-                  <p class="card-text">Neurology is the branch of medicine focused on the study and treatment of </p>
-                  <a class="btn btn btn-primary rounded-pill me-2" type="button">
+                  <p class="card-text m-0">Neurology is the branch of medicine focused on the study and treatment of
+                  </p>
+                  <a class="btn btn-primary rounded-pill me-2 mt-2" type="button">
                     <i class="bi bi-calendar-plus me-2"></i>
                     Book Appointment
                   </a>
-
-                  <a class="btn btn-primary rounded-pill" type="button">
+                  <a class="btn btn-primary rounded-pill mt-2" type="button">
                     <i class="bi bi-info-circle me-2"></i>
                     Learn More
                   </a>
@@ -251,14 +235,13 @@
                   class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
                 <div class="card-body">
                   <h4 class="card-title fw-bold">Orthopedics</h4>
-                  <p class="card-text">Orthopedics, also spelled orthopaedics, is a medical specialty focused on the
+                  <p class="card-text m-0">Orthopedics, also spelled orthopaedics, is a medical specialty focused on the
                     musculoskeletal system</p>
-                  <a class="btn btn btn-primary rounded-pill me-2" type="button">
+                  <a class="btn btn-primary rounded-pill me-2 mt-2" type="button">
                     <i class="bi bi-calendar-plus me-2"></i>
                     Book Appointment
                   </a>
-
-                  <a class="btn btn-primary rounded-pill" type="button">
+                  <a class="btn btn-primary rounded-pill mt-2" type="button">
                     <i class="bi bi-info-circle me-2"></i>
                     Learn More
                   </a>
@@ -271,14 +254,13 @@
                   class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
                 <div class="card-body">
                   <h4 class="card-title fw-bold">Padiatrics</h4>
-                  <p class="card-text">Orthopedics is a medical specialty focused on the musculoskeletal system,
+                  <p class="card-text m-0">Orthopedics is a medical specialty focused on the musculoskeletal system,
                     encompassing bones,</p>
-                  <a class="btn btn btn-primary rounded-pill me-2" type="button">
+                  <a class="btn btn-primary rounded-pill me-2 mt-2" type="button">
                     <i class="bi bi-calendar-plus me-2"></i>
                     Book Appointment
                   </a>
-
-                  <a class="btn btn-primary rounded-pill" type="button">
+                  <a class="btn btn-primary rounded-pill mt-2" type="button">
                     <i class="bi bi-info-circle me-2"></i>
                     Learn More
                   </a>
@@ -291,14 +273,13 @@
                   class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
                 <div class="card-body">
                   <h4 class="card-title fw-bold">Emergency care</h4>
-                  <p class="card-text">Emergency care focuses on providing immediate medical attention to individuals
+                  <p class="card-text m-0">Emergency care focuses on providing immediate medical attention to individuals
                     facing</p>
-                  <a class="btn btn btn-primary rounded-pill me-2" type="button">
+                  <a class="btn btn-primary rounded-pill me-2 mt-2" type="button">
                     <i class="bi bi-calendar-plus me-2"></i>
                     Book Appointment
                   </a>
-
-                  <a class="btn btn-primary rounded-pill" type="button">
+                  <a class="btn btn-primary rounded-pill mt-2" type="button">
                     <i class="bi bi-info-circle me-2"></i>
                     Learn More
                   </a>
@@ -343,16 +324,20 @@
               <br>
               <p class="fs-5 mt-4 text-muted">In subject area: Social Sciences</p>
 
-              <p class="fs-5 mt-4 text-muted" style="font-size: 15px;">Health care services refer to the various medical and therapeutic services
+              <p class="fs-5 mt-4 text-muted" style="font-size: 15px;">Health care services refer to the various medical
+                and therapeutic services
                 provided to patients, which can include preventive, diagnostic, and treatment activities. The
                 reimbursement for these services can occur through methods such as fee-for-service payments, capitation,
                 or salaries, with costs varying widely among practitioners and locations.
                 AI generated definition based on: Health Care Today in the United States, 2023</p>
-              <a class="me-3" href="#" style="text-decoration: none; color:black"><i class="bi bi-bag-plus-fill me-2"></i> about this
+              <a class="me-3" href="#" style="text-decoration: none; color:black"><i
+                  class="bi bi-bag-plus-fill me-2"></i> about this
                 page</a>
-              <a class="me-3" href="#" style="text-decoration: none; color: rgb(0, 0, 0);"><i class="bi bi-lock-fill me-2"></i> add to
+              <a class="me-3" href="#" style="text-decoration: none; color: rgb(0, 0, 0);"><i
+                  class="bi bi-lock-fill me-2"></i> add to
                 mendeley</a>
-              <a class="me-3" href="#" style="text-decoration: none; color: rgb(0, 0, 0);"><i class="bi bi-bell-fill me-2"></i> set
+              <a class="me-3" href="#" style="text-decoration: none; color: rgb(0, 0, 0);"><i
+                  class="bi bi-bell-fill me-2"></i> set
                 alert</a>
             </div>
             <div class="col-lg-4">
@@ -367,125 +352,122 @@
   </main>
 
   <footer class="pt-5">
-        <section class="pb-4">
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-lg-4">
-                        <h5 class="fw-bold mb-3">
-                            <i class="bi bi-heart-pulse fs-4 text-primary icon-heart-pulse"></i>
-                            HopeMed
-                        </h5>
-                        <p class="fs-6 text-muted m-0 mb-3">
-                            HopeMed offers comprehensive healthcare services with a focus on compassion, quality, and
-                            accessibility for every patient.
-                        </p>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-facebook me-2 text-primary fs-4"></i>
-                        </a>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-twitter-x me-2 text-primary fs-4"></i>
-                        </a>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-linkedin me-2 text-primary fs-4"></i>
-                        </a>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-instagram me-2 text-primary fs-4"></i>
-                        </a>
-                        <a href="" class="text-decoration-none">
-                            <i class="bi bi-telegram me-2 text-primary fs-4"></i>
-                        </a>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-lg-2">
-                        <h6 class="fw-bold mb-3">HopeMed</h6>
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="../../index.html"
-                                    class="nav-link w-fit p-0 pb-2 text-muted fs-6">Home</a>
-                            </li>
-                            <li class="nav-item"><a href="services.html"
-                                    class="nav-link w-fit p-0 pb-2 text-muted fs-6">Services</a>
-                            </li>
-                            <li class="nav-item"><a href="emergency.html"
-                                    class="nav-link w-fit p-0 pb-2 text-muted fs-6">Emergency</a>
-                            </li>
-                            <li class="nav-item"><a href="pricing.html"
-                                    class="nav-link w-fit p-0 pb-2 text-muted fs-6">Pricing</a>
-                            </li>
-                            <li class="nav-item"><a href="blog.html"
-                                    class="nav-link w-fit p-0 pb-2 text-muted fs-6">Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <h6 class="fw-bold mb-3">Support</h6>
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Help and
-                                    Support</a></li>
-                            <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Become
-                                    Instructor</a></li>
-                            <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Get the
-                                    app</a>
-                            </li>
-                            <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">FAQs</a>
-                            </li>
-                            <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Tutorial</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h6 class="fw-bold mb-3">Get in touch</h6>
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="" class="nav-link pe-none p-0 pb-2 text-muted fs-6">339
-                                    McDermott
-                                    Points
-                                    Hettingerhaven, NV 15283</a></li>
-                            <li class="nav-item"><a href="" class="nav-link pe-none p-0 pb-2 text-muted fs-6">Email:
-                                    support@hopemed.com</a>
-                            </li>
-                            <li class="nav-item"><a href="" class="nav-link pe-none p-0 pb-2 text-muted fs-6">Phone: 000
-                                    123 456
-                                    789</a></li>
-                            <li class="nav-item d-flex gap-2">
-                                <a href="" class="p-0 pb-2 text-muted fs-6">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png"
-                                        alt="App Store" class="img-fluid download">
-                                </a>
-                                <a href="" class="p-0 pb-2 text-muted fs-6">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"
-                                        alt="Google Play" class="img-fluid download">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container" style="border-top: 1px solid lightgray;">
-                <div class="row g-0">
-                    <div class="col-md-6 col-lg-2 w-content">
-                        <p class="text-muted m-2 fs-6">© 2023 HopeMed-UI</p>
-                    </div>
-                    <div class="col-md-6 col-lg-2 w-content">
-                        <p class="text-muted m-2 fs-6">Privacy Policy</p>
-                    </div>
-                    <div class="col-md-6 col-lg-2 w-content">
-                        <p class="text-muted m-2 fs-6">Cookie Notice</p>
-                    </div>
-                    <div class="col-md-6 col-lg-2 w-content">
-                        <p class="text-muted m-2 fs-6">Do Not Sell My Personal Information</p>
-                    </div>
-                    <div class="col-md-6 col-lg-2 w-content">
-                        <p class="text-muted m-2 fs-6">Terms of Use</p>
-                    </div>
-                    <div class="col-md-6 col-lg-2 w-content ms-lg-auto">
-                        <p class="text-muted m-2 fs-6"><i class="bi bi-globe"></i> Language <i
-                                class="bi bi-chevron-down"></i></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
+    <section class="pb-4">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">
+              <i class="bi bi-heart-pulse fs-4 text-primary icon-heart-pulse"></i>
+              HopeMed
+            </h5>
+            <p class="fs-6 text-muted m-0 mb-3">
+              HopeMed offers comprehensive healthcare services with a focus on compassion, quality, and
+              accessibility for every patient.
+            </p>
+            <a href="" class="text-decoration-none">
+              <i class="bi bi-facebook me-2 text-primary fs-4"></i>
+            </a>
+            <a href="" class="text-decoration-none">
+              <i class="bi bi-twitter-x me-2 text-primary fs-4"></i>
+            </a>
+            <a href="" class="text-decoration-none">
+              <i class="bi bi-linkedin me-2 text-primary fs-4"></i>
+            </a>
+            <a href="" class="text-decoration-none">
+              <i class="bi bi-instagram me-2 text-primary fs-4"></i>
+            </a>
+            <a href="" class="text-decoration-none">
+              <i class="bi bi-telegram me-2 text-primary fs-4"></i>
+            </a>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-lg-2">
+            <h6 class="fw-bold mb-3">HopeMed</h6>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="../../index.html" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Home</a>
+              </li>
+              <li class="nav-item"><a href="services.html" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Services</a>
+              </li>
+              <li class="nav-item"><a href="emergency.html"
+                  class="nav-link w-fit p-0 pb-2 text-muted fs-6">Emergency</a>
+              </li>
+              <li class="nav-item"><a href="pricing.html" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Pricing</a>
+              </li>
+              <li class="nav-item"><a href="blog.html" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h6 class="fw-bold mb-3">Support</h6>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Help and
+                  Support</a></li>
+              <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Become
+                  Instructor</a></li>
+              <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Get the
+                  app</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">FAQs</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav-link w-fit p-0 pb-2 text-muted fs-6">Tutorial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="fw-bold mb-3">Get in touch</h6>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="" class="nav-link pe-none p-0 pb-2 text-muted fs-6">339
+                  McDermott
+                  Points
+                  Hettingerhaven, NV 15283</a></li>
+              <li class="nav-item"><a href="" class="nav-link pe-none p-0 pb-2 text-muted fs-6">Email:
+                  support@hopemed.com</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav-link pe-none p-0 pb-2 text-muted fs-6">Phone: 000
+                  123 456
+                  789</a></li>
+              <li class="nav-item d-flex gap-2">
+                <a href="" class="p-0 pb-2 text-muted fs-6">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png"
+                    alt="App Store" class="img-fluid download">
+                </a>
+                <a href="" class="p-0 pb-2 text-muted fs-6">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"
+                    alt="Google Play" class="img-fluid download">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" style="border-top: 1px solid lightgray;">
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-2 w-content">
+            <p class="text-muted m-2 fs-6">© 2023 HopeMed-UI</p>
+          </div>
+          <div class="col-md-6 col-lg-2 w-content">
+            <p class="text-muted m-2 fs-6">Privacy Policy</p>
+          </div>
+          <div class="col-md-6 col-lg-2 w-content">
+            <p class="text-muted m-2 fs-6">Cookie Notice</p>
+          </div>
+          <div class="col-md-6 col-lg-2 w-content">
+            <p class="text-muted m-2 fs-6">Do Not Sell My Personal Information</p>
+          </div>
+          <div class="col-md-6 col-lg-2 w-content">
+            <p class="text-muted m-2 fs-6">Terms of Use</p>
+          </div>
+          <div class="col-md-6 col-lg-2 w-content ms-lg-auto">
+            <p class="text-muted m-2 fs-6"><i class="bi bi-globe"></i> Language <i class="bi bi-chevron-down"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 
   <!-- script bootstrap -->
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
